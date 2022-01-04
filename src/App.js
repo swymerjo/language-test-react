@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import LanguageTest from './LanguageTest';
+ 
 
 export default function App() {
 	const questions = [
@@ -58,7 +60,7 @@ function handleAnswerClick(answerClass){
 	return (
     <div className='test'>
       {formComplete ? (
-        <h1>Classes for you: {classOptions.join(" ")}</h1>
+         <LanguageTest />
       ) : (
     <section className='question-container'>
 					<h3>{questionText}</h3>
@@ -66,7 +68,7 @@ function handleAnswerClick(answerClass){
 	{answerOptions.map((answerOption) => (
 		<button onClick={() => handleAnswerClick(answerOption.answerClass)} className='answer-btn'>{answerOption.answerText}</button>
 	))}
-  <button onClick={() => nextQuestion()} class="next-btn">Next</button>
+  <button onClick={() => nextQuestion()} className="next-btn">Next</button>
 </div>
           </section> )}
           </div>
