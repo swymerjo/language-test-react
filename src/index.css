@@ -23,7 +23,7 @@ h3{
 
 }
 
-.language-test-one-container {
+.language-test-container {
   max-width: 70%;
   margin: 0 auto;
   border: 2px solid #252d4a;
@@ -32,8 +32,30 @@ h3{
   padding: 10px 20px 10px 20px;
   background: #8acafc;
 }
-
-.answer-btn {
+.language-test-question{
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 30px 5px 30px 5px;
+  background: rgb(201, 245, 245);
+}
+.sub-question-container{
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  background: #cfe6f8;
+  margin-bottom: 30px;
+}
+.sub-question-text{
+  font-size: 16pt;
+}
+.question-background{
+  background: #8acafc;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 4px;
+}
+.answer-btn, .answer-btn-2 {
   width: 100%;
   font-size: 18px;
   color: black;
@@ -48,10 +70,23 @@ h3{
   cursor: pointer;
 }
 
-
-.answer-btn:hover {
-  background-color: #69a9da;
+.answer-btn-click {
+  width: 100%;
+  font-size: 18px;
+  color: black;
+  background-color: #71a1c5;
+  border-radius: 5px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  border: 2px solid black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
+
+
+
 
 .next-btn {
   background: #cfe6f8;
@@ -70,4 +105,10 @@ h3{
   display: flex;
   width: 100%;
   margin-bottom: 20px;
+}
+
+@media (max-width:760px){
+.question-container, .language-test-one-container{
+  max-width: 100%;
+}
 }

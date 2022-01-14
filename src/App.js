@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LanguageTest from './LanguageTest';
+
  
 
 export default function App() {
@@ -38,39 +39,57 @@ export default function App() {
   const {questionText,answerOptions} = questions[index];
   const [formComplete, setFormComplete] = useState(false);
   const [classOptions, setClassOptions] = useState([]);
+  const [style, setStyle] = useState("answer-btn"); 
+  const classOptionsFinal = classOptions;
+  console.log(classOptionsFinal);
+
+
+
 
 
 function nextQuestion(){
   let nextQuestion = index + 1;
-  console.log(nextQuestion);
   if (nextQuestion < questions.length){
     setIndex(nextQuestion);
+    setStyle("");
+    setStyle("answer-btn-2");
   } else {
     setFormComplete(true);
+
 }
 }
 
-function handleAnswerClick(answerClass){
-  console.log(answerClass);
-  setClassOptions([answerClass].concat (classOptions));
-  console.log(classOptions);
+function handleAnswerClass(answerClass){
+  setClassOptions([answerClass + " "].concat (classOptions));
+}
+
+function handleAnswerClick(e, answerClass){
+  let currentButton = e.target;
+  currentButton.classList.toggle("answer-btn-click");
+  handleAnswerClass(answerClass);
+
 
 }
+
+
 
 	return (
     <div className='test'>
       {formComplete ? (
-         <LanguageTest />
+         <LanguageTest courses={classOptionsFinal}/>
       ) : (
     <section className='question-container'>
 					<h3>{questionText}</h3>
-              <div className='answer-section' key={index}>
-	{answerOptions.map((answerOption) => (
-		<button onClick={() => handleAnswerClick(answerOption.answerClass)} className='answer-btn'>{answerOption.answerText}</button>
+              <div className='answer-section'>
+  	{answerOptions.map((answerOption, index) => (
+		<button id="answer-btn" key={index} onClick={(e) => handleAnswerClick(e, answerOption.answerClass)} className={style}>{answerOption.answerText}</button>
 	))}
+  <p>You have selected: {classOptions}</p>
   <button onClick={() => nextQuestion()} className="next-btn">Next</button>
 </div>
           </section> )}
           </div>
 				
 			)};
+
+      // toggle!
