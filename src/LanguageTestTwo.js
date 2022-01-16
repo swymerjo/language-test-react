@@ -88,7 +88,8 @@ export default function LanguageTestTwo(){
     return (
         <div className="language-test-container">
         <section className="sub-question-container">
-            <h3 className="question-background">In this section you must choose the word which best fits each space in the text below.</h3>       
+            <h3>In this section you must choose the word which best fits each space in the text below.</h3>       
+           <hr className="line"></hr>
             <h4 className="sub-question-text">
 Scotland is the north part of the island of Great Britain.  The Atlantic Ocean is on the west and the North Sea on the east.  Some people ____ Scotland speak a different language called Gaelic.  There are ____ five million people in Scotland, and Edinburgh is ____ most famous city.
 Scotland has many mountains; the highest one is called 'Ben Nevis'.  In the south of Scotland, there are a lot of sheep.  A long time ago, there ____ many forests, but now there are only a ____.

@@ -96,6 +96,7 @@ function nextQuestionTest(){
          </section>
       ) : (
          <section className='language-test-container'>
+             <h3>Question {questionNumber}</h3>
 					<h3 className="language-test-question">Where can you see this notice?</h3>
                     <img className="test-image" src={image} alt="test-image" />
               <div className='answer-section' key={questionNumber}>

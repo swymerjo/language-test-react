@@ -6,7 +6,8 @@ import LanguageTest from './LanguageTest';
 export default function App() {
 	const questions = [
 		{ id: 1,
-			questionText: 'Welcher Sprachkurs interessiert Sie? / Which language courses are you interested in?',
+			questionText: 'Welcher Sprachkurs interessiert Sie?',
+      questionTextEnglish: 'Which language courses are you interested in?',
 			answerOptions: [
 				{ answerText: 'Conversation', answerClass: "class-1" },
 				{ answerText: 'Business English', answerClass: "class-2" },
@@ -20,8 +21,9 @@ export default function App() {
 			],
 		},
 		{ id: 2,
-			questionText: 'Wie haben Sie von unserem Sprachkursprogramm gehört? / How did you hear about our language course offerings?',
-			answerOptions: [
+			questionText: 'Wie haben Sie von unserem Sprachkursprogramm gehört?',
+      questionTextEnglish: 'How did you hear about our language course offerings?',
+      answerOptions: [
 
 				{ answerText: 'Carl-Schurz-Haus Webseite', answerClass: "class-5"},
 				{ answerText: 'Social Media (Facebook, Twitter, Instagram, LinkedIn)', answerClass: "" },
@@ -36,7 +38,7 @@ export default function App() {
 		},
 	];
   const [index, setIndex] = useState(0);
-  const {questionText,answerOptions} = questions[index];
+  const {questionText,answerOptions, questionTextEnglish} = questions[index];
   const [formComplete, setFormComplete] = useState(false);
   const [classOptions, setClassOptions] = useState([]);
   const [style, setStyle] = useState("answer-btn"); 
@@ -80,6 +82,8 @@ function handleAnswerClick(e, answerClass){
       ) : (
     <section className='question-container'>
 					<h3>{questionText}</h3>
+          <hr className='line'></hr>
+          <h3>{questionTextEnglish}</h3>
               <div className='answer-section'>
   	{answerOptions.map((answerOption, index) => (
 		<button id="answer-btn" key={index} onClick={(e) => handleAnswerClick(e, answerOption.answerClass)} className={style}>{answerOption.answerText}</button>
