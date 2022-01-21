@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { questionsSix } from './questionsSix';
+import TestResults from './TestResults';
 
 export default function LanguageTestFour(scoreFive) {
 	const currentScore = scoreFive;
@@ -36,7 +37,7 @@ export default function LanguageTestFour(scoreFive) {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<p>Hi Sammy</p>
+					<TestResults scoreSix={score} />
 					{/* <TestResults score={score} courses={courses}/> */}
 				</section>
 			) : (

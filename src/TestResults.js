@@ -1,12 +1,13 @@
 import React from 'react';
 
-export default function TestResults({ score, courses }) {
-	let coursesTest = courses.courses;
-	console.log(coursesTest);
+export default function TestResults(score) {
+	const currentScore = score;
+	console.log(currentScore);
+
 	return (
 		<>
-			<p>You scored: {score} </p>
-			<p>Course recommendations: {coursesTest}</p>
+			<p>You scored: {currentScore.scoreSix} </p>
+			<p>Course recommendations: {}</p>
 		</>
 	);
 }
