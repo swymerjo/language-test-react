@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import LanguageTestFour from './LanguageTestFour';
-import { questionsThree } from './questionsThree';
+import { questionsFour } from './questionsFour';
+import LanguageTestFive from './LanguageTestFive';
 
-export default function LanguageTestThree(scoreTwo) {
-	const currentScore = scoreTwo;
-	console.log(currentScore.scoreTwo);
+export default function LanguageTestFour(scoreThree) {
+	const currentScore = scoreThree;
+	console.log(currentScore.scoreThree);
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
 	const { question, answerOptions, questionNumber, id } =
-		questionsThree[indexLanguageTest];
-	const [score, setScore] = useState(currentScore.scoreTwo);
+		questionsFour[indexLanguageTest];
+	const [score, setScore] = useState(currentScore.scoreThree);
 	const [testComplete, setTestComplete] = useState(false);
 
 	function handleAnswerClickTest(isCorrect) {
@@ -26,7 +26,7 @@ export default function LanguageTestThree(scoreTwo) {
 	function nextQuestionTest() {
 		let nextQuestionTest = id + 1;
 		console.log(nextQuestionTest);
-		if (nextQuestionTest < questionsThree.length) {
+		if (nextQuestionTest < questionsFour.length) {
 			setIndexLanguageTest(nextQuestionTest);
 		} else {
 			setTestComplete(true);
@@ -37,7 +37,7 @@ export default function LanguageTestThree(scoreTwo) {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<LanguageTestFour scoreThree={score} />
+					<LanguageTestFive scoreFour={score} />
 					{/* <TestResults score={score} courses={courses}/> */}
 				</section>
 			) : (
@@ -49,15 +49,17 @@ export default function LanguageTestThree(scoreTwo) {
 						</h3>
 						<hr className="line"></hr>
 						<h4 className="sub-question-text">
-							Alice Guy Blaché Alice Guy Blaché was the first female film
-							director. She first became involved in cinema whilst working for
-							the German Film Company in the late 1890s. This was a period of
-							great change in the cinema and Alice was the first to use many new
-							inventions, ____ sound and color. In 1907 Alice ____ to New York
-							where she started her own film company. She was ____ successful,
-							but, when Hollywood became the center of the film world, the best
-							days of the independent New York film companies were ____. When
-							Alice died in 1968, hardly anybody ____ her name.
+							UFOs - do they exist? UFO is short for 'unidentified flying
+							object'. UFOs are popularly known as flying saucers, ____ that is
+							often the ____ they are reported to be. The ____ 'flying saucers'
+							were seen in 1947 by an American pilot, but experts who studied
+							his claim decided it had been a trick of the light. Even people
+							experienced at watching the sky, ____ as pilots, report seeing
+							UFOs. In 1978 a pilot reported a collection of UFOs off the coast
+							of New Zealand. A television ____ went up with the pilot and
+							filmed the UFOs. Scientists studying this phenomenon later
+							discovered that in this case they were simply lights on boats out
+							fishing.
 						</h4>
 					</section>
 
@@ -79,7 +81,6 @@ export default function LanguageTestThree(scoreTwo) {
 					</div>
 				</div>
 			)}
-			;
 		</>
 	);
 }
