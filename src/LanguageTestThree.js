@@ -79,7 +79,6 @@ export default function LanguageTestThree(scoreTwo) {
 					</div>
 				</div>
 			)}
-			;
 		</>
 	);
 }

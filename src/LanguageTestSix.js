@@ -36,7 +36,7 @@ export default function LanguageTestFour(scoreFive) {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<p>Hi</p>
+					<p>Hi Sammy</p>
 					{/* <TestResults score={score} courses={courses}/> */}
 				</section>
 			) : (
