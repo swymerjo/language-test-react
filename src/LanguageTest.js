@@ -109,7 +109,7 @@ export default function LanguageTest(courses) {
 								{answerOption.answerText}
 							</button>
 						))}
-						<p>Question {questionNumber}/30</p>
+						<p>Question {questionNumber}/40</p>
 						<p>Your score is {score}</p>
 					</div>
 				</section>

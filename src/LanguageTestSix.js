@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import { questionsFive } from './questionsFive';
-import LanguageTestSix from './LanguageTestSix';
+import { questionsSix } from './questionsSix';
 
-export default function LanguageTestFour(scoreFour) {
-	const currentScore = scoreFour;
-	console.log(currentScore.scoreFour);
+export default function LanguageTestFour(scoreFive) {
+	const currentScore = scoreFive;
+	console.log(currentScore.scoreFive);
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
 	const { question, answerOptions, questionNumber, id } =
-		questionsFive[indexLanguageTest];
-	const [score, setScore] = useState(currentScore.scoreFour);
+		questionsSix[indexLanguageTest];
+	const [score, setScore] = useState(currentScore.scoreFive);
 	const [testComplete, setTestComplete] = useState(false);
 
 	function handleAnswerClickTest(isCorrect) {
@@ -26,7 +25,7 @@ export default function LanguageTestFour(scoreFour) {
 	function nextQuestionTest() {
 		let nextQuestionTest = id + 1;
 		console.log(nextQuestionTest);
-		if (nextQuestionTest < questionsFive.length) {
+		if (nextQuestionTest < questionsSix.length) {
 			setIndexLanguageTest(nextQuestionTest);
 		} else {
 			setTestComplete(true);
@@ -37,7 +36,7 @@ export default function LanguageTestFour(scoreFour) {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<LanguageTestSix scoreFive={score} />
+					<p>Hi</p>
 					{/* <TestResults score={score} courses={courses}/> */}
 				</section>
 			) : (
