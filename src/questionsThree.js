@@ -6,9 +6,9 @@ export const questionsThree = [
 			'Alice was the first to use many new inventions, ____ sound and color.',
 		answerOptions: [
 			{ answerText: 'bringing', isCorrect: false },
-			{ answerText: 'including', isCorrect: false },
+			{ answerText: 'including', isCorrect: true },
 			{ answerText: 'containing', isCorrect: false },
-			{ answerText: 'supporting', isCorrect: true },
+			{ answerText: 'supporting', isCorrect: false },
 		],
 	},
 	{
