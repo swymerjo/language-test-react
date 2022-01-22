@@ -27,8 +27,9 @@ export default function App() {
 	}
 
 	function handleAnswerClick(e, answerClass) {
-		let currentButton = e.target;
-		currentButton.classList.toggle('answer-btn-click');
+		console.log(e.target.className);
+		let current = e.target;
+		current.classList.toggle('answer-btn-click');
 		handleAnswerClass(answerClass);
 	}
 

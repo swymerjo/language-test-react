@@ -1,123 +1,128 @@
 :root {
-  --background: #F4F9F9;
-  --light-blue: #CBF2F4;
-  --bright-blue: #A4EBF3;
-  --border: #d1d4d4;
+	--background: #f4f9f9;
+	--light-blue: #cbf2f4;
+	--bright-blue: #a4ebf3;
+	--border: #d1d4d4;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--background);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--background);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
-h3{
-  font-size: 20pt;
-  text-align: center;
-  margin: 15px;
+h3 {
+	font-size: 20pt;
+	text-align: center;
+	margin: 15px;
 }
 
 .question-container {
-  max-width: 100%;
-  margin: 0 auto;
-  background: var(--bright-blue);
-  border: 2px solid black;
-  border-radius: 4px;
-  padding: 0 10px 10px 10px;
+	max-width: 100%;
+	margin: 0 auto;
+	background: var(--bright-blue);
+	border: 2px solid black;
+	border-radius: 4px;
+	padding: 0 10px 10px 10px;
 }
 
 .language-test-container {
-  max-width: 70%;
-  margin: 0 auto;
-  border: 2px solid black;
-  border-radius: 4px;
-  color: black;
-  padding: 10px 20px 10px 20px;
-  background: var(--bright-blue);
+	max-width: 70%;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius: 4px;
+	color: black;
+	padding: 10px 20px 10px 20px;
+	background: var(--bright-blue);
 }
-.language-test-question{
-  margin: 20px;
+.language-test-question {
+	margin: 20px;
 }
-.sub-question-container{
-  border: 2px solid black;
-  border-radius: 4px;
-  padding: 10px;
-  background: var(--light-blue);
-  margin-bottom: 30px;
+.sub-question-container {
+	border: 2px solid black;
+	border-radius: 4px;
+	padding: 10px;
+	background: var(--light-blue);
+	margin-bottom: 30px;
 }
-.sub-question-text{
-  font-size: 16pt;
+.sub-question-text {
+	font-size: 16pt;
 }
-.line{
-  border-top: 5px dotted grey;
-  margin-right: 20px;
-  margin-left: 20px;
+.line {
+	border-top: 5px dotted grey;
+	margin-right: 20px;
+	margin-left: 20px;
 }
-.answer-btn, .answer-btn-2 {
-  width: 100%;
-  font-size: 18px;
-  color: black;
-  background-color: var(--border);
-  font-weight: bold;
-  text-align: start;
-  border-radius: 5px;
-  display: flex;
-  padding: 10px;
-  align-items: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  cursor: pointer;
+.answer-btn,
+.answer-btn-2 {
+	width: 100%;
+	font-size: 18px;
+	color: black;
+	background-color: var(--border);
+	font-weight: bold;
+	text-align: start;
+	border-radius: 5px;
+	display: flex;
+	padding: 10px;
+	align-items: center;
+	border: 2px solid black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
 }
 
-.answer-btn:hover, .answer-btn-2:hover{
-  background: coral;
+.answer-btn:hover,
+.answer-btn-2:hover {
+	/* background: coral; */
 }
 
 .answer-btn-click {
-  width: 100%;
-  font-size: 18px;
-  color: black;
-  background-color: coral;
-  border-radius: 5px;
-  display: flex;
-  padding: 10px;
-  align-items: center;
-  border: 2px solid black;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	background-color: coral;
+	border-radius: 5px;
+	display: flex;
+	padding: 10px;
+	align-items: center;
+	border: 2px solid black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
 }
 
 .next-btn {
-  background: var(--light-blue);
-  border: 2px solid black;
-  font-weight: bold;
-  border-radius: 5px;
-  padding: 10px 30px 10px 30px;
-  display: flex;
-  margin: 0 auto;
-  font-size: 14pt;
-  margin-top: 15px;
+	background: var(--light-blue);
+	border: 2px solid black;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 10px 30px 10px 30px;
+	display: flex;
+	margin: 0 auto;
+	font-size: 14pt;
+	margin-top: 15px;
 }
 
-.test-image{
-  border: 2px solid #252d4a;
-  border-radius: 5px;
-  display: flex;
-  width: 100%;
-  margin-bottom: 20px;
+.test-image {
+	border: 2px solid #252d4a;
+	border-radius: 5px;
+	display: flex;
+	width: 100%;
+	margin-bottom: 20px;
 }
 
-@media (max-width:760px){
-  h3 {
-    font-size: 15pt;
-  }
-.question-container, .language-test-container{
-  max-width: 100%;
-  margin: 10px;
-}
+@media (max-width: 760px) {
+	h3 {
+		font-size: 15pt;
+	}
+	.question-container,
+	.language-test-container {
+		max-width: 100%;
+		margin: 10px;
+	}
 }
