@@ -19,7 +19,7 @@ export default function TestResults(score) {
 					<p>your score is: {currentScore.scoreSix} (B1)</p>
 				</section>
 			) : (
-				<p>B2</p>
+				currentScore.scoreSix >= 31 && currentScore.scoreSix <= 36(<p>B2</p>)
 			)}
 		</>
 	);
