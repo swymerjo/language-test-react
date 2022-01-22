@@ -6,7 +6,7 @@ export default function TestResults(score) {
 
 	return (
 		<>
-			{currentScore <= 15 ? (
+			{currentScore.scoreSix <= 15 ? (
 				<section>
 					<p>your score is: {currentScore.scoreSix} (A1)</p>
 				</section>
