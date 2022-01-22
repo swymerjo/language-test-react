@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AdvancedTest from './AdvancedTest';
 import { questionsSix } from './questionsSix';
 import TestResults from './TestResults';
 
@@ -35,10 +36,13 @@ export default function LanguageTestFour(scoreFive) {
 
 	return (
 		<>
-			{testComplete ? (
+			{testComplete && score < 36 ? (
 				<section className="language-test-two">
 					<TestResults scoreSix={score} />
-					{/* <TestResults score={score} courses={courses}/> */}
+				</section>
+			) : testComplete && score >= 36 ? (
+				<section>
+					<AdvancedTest scoreSix={score} />
 				</section>
 			) : (
 				<div className="language-test-container">
