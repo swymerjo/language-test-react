@@ -8,7 +8,7 @@ export default function TestResults(score) {
 		<>
 			{currentScore.scoreSix <= 15 ? (
 				<section>
-					<p>your score is: {currentScore.scoreSix} (A1)</p>
+					<p>your score is: {currentScore.scoreSix}(A1)</p>
 				</section>
 			) : currentScore.scoreSix >= 16 && currentScore.scoreSix <= 23 ? (
 				<section>

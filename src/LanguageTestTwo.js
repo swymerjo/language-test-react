@@ -37,8 +37,7 @@ export default function LanguageTestTwo(scoreOne) {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<LanguageTestThree scoreTwo={score} />
-					{/* <TestResults score={score} courses={courses}/> */}
+					<LanguageTestThree scoreTwo={score}/>
 				</section>
 			) : (
 				<div className="language-test-container">
@@ -69,7 +68,7 @@ export default function LanguageTestTwo(scoreOne) {
 							<button
 								key={index}
 								onClick={() => handleAnswerClickTest(answerOption.isCorrect)}
-								className="answer-btn"
+								className="answer-btn-test"
 							>
 								{answerOption.answerText}
 							</button>

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-// import TestResults from "./TestResults";
 import LanguageTestTwo from './LanguageTestTwo';
 
-export default function LanguageTest(courses) {
+export default function LanguageTest() {
 	const languageTestQuestionsOne = [
 		{
 			id: 0,
@@ -61,14 +60,10 @@ export default function LanguageTest(courses) {
 		languageTestQuestionsOne[indexLanguageTest];
 	const [score, setScore] = useState(0);
 	const [testComplete, setTestComplete] = useState(false);
-	console.log(courses);
 
 	function handleAnswerClickTest(isCorrect) {
-		console.log(isCorrect);
-		console.log(score);
 		if (isCorrect) {
 			setScore(score + 1);
-			console.log(score);
 			nextQuestionTest();
 		} else {
 			nextQuestionTest();
@@ -77,7 +72,6 @@ export default function LanguageTest(courses) {
 
 	function nextQuestionTest() {
 		let nextQuestionTest = id + 1;
-		console.log(nextQuestionTest);
 		if (nextQuestionTest < languageTestQuestionsOne.length) {
 			setIndexLanguageTest(nextQuestionTest);
 		} else {
@@ -90,7 +84,6 @@ export default function LanguageTest(courses) {
 			{testComplete ? (
 				<section className="language-test-two">
 					<LanguageTestTwo scoreOne={score} />
-					{/* <TestResults score={score} courses={courses}/> */}
 				</section>
 			) : (
 				<section className="language-test-container">
@@ -98,13 +91,13 @@ export default function LanguageTest(courses) {
 					<h3 className="language-test-question">
 						Where can you see this notice?
 					</h3>
-					<img className="test-image" src={image} alt="test-image" />
+					<img className="test-image" src={image} alt="test" />
 					<div className="answer-section" key={questionNumber}>
 						{answerOptions.map((answerOption, index) => (
 							<button
 								key={index}
 								onClick={() => handleAnswerClickTest(answerOption.isCorrect)}
-								className="answer-btn"
+								className="answer-btn-test"
 							>
 								{answerOption.answerText}
 							</button>

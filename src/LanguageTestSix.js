@@ -3,7 +3,7 @@ import AdvancedTest from './AdvancedTest';
 import { questionsSix } from './questionsSix';
 import TestResults from './TestResults';
 
-export default function LanguageTestFour(scoreFive) {
+export default function LanguageTestSix(scoreFive) {
 	const currentScore = scoreFive;
 	console.log(currentScore.scoreFive);
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
@@ -61,7 +61,7 @@ export default function LanguageTestFour(scoreFive) {
 							<button
 								key={index}
 								onClick={() => handleAnswerClickTest(answerOption.isCorrect)}
-								className="answer-btn"
+								className="answer-btn-test"
 							>
 								{answerOption.answerText}
 							</button>

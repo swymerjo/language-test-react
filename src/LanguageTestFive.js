@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { questionsFive } from './questionsFive';
 import LanguageTestSix from './LanguageTestSix';
 
-export default function LanguageTestFour(scoreFour) {
+export default function LanguageTestFive(scoreFour) {
 	const currentScore = scoreFour;
 	console.log(currentScore.scoreFour);
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
@@ -37,8 +37,7 @@ export default function LanguageTestFour(scoreFour) {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<LanguageTestSix scoreFive={score} />
-					{/* <TestResults score={score} courses={courses}/> */}
+					<LanguageTestSix scoreFive={score}/>
 				</section>
 			) : (
 				<div className="language-test-container">
@@ -57,7 +56,7 @@ export default function LanguageTestFour(scoreFour) {
 							<button
 								key={index}
 								onClick={() => handleAnswerClickTest(answerOption.isCorrect)}
-								className="answer-btn"
+								className="answer-btn-test"
 							>
 								{answerOption.answerText}
 							</button>

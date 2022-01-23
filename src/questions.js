@@ -4,25 +4,25 @@ export const questions = [
 		questionText: 'Welcher Sprachkurs interessiert Sie?',
 		questionTextEnglish: 'Which language courses are you interested in?',
 		answerOptions: [
-			{ answerText: 'Conversation', answerClass: 'class-1' },
-			{ answerText: 'Business English', answerClass: 'class-2' },
-			{ answerText: 'Intensive', answerClass: 'class-3' },
-			{ answerText: 'mit Lehrbuch', answerClass: 'class-4' },
-			{ answerText: 'Grammar!', answerClass: 'class-5' },
+			{ answerText: 'Conversation', answerClass: 'conversation' },
+			{ answerText: 'Business English', answerClass: 'business' },
+			{ answerText: 'Intensive', answerClass: 'intensive' },
+			{ answerText: 'mit Lehrbuch', answerClass: 'lehrbuch' },
+			{ answerText: 'Grammar!', answerClass: 'grammar' },
 			{
 				answerText: 'Testvorbereitung (CAE, IELTS, TOEFL usw.)',
-				answerClass: 'class-6',
+				answerClass: 'test',
 			},
 			{
 				answerText:
 					'etwas kulturelles (z.B. Art Talks! oder English through Film)',
-				answerClass: 'class-7',
+				answerClass: 'cultural',
 			},
-			{ answerText: 'Einzelunterricht', answerClass: 'class-8' },
+			{ answerText: 'Einzelunterricht', answerClass: 'einzel' },
 			{
 				answerText:
 					'Englisch für Schüler*innen der Kursstufen ab 7. Klasse (inkl. Abitur, Mittlere Reife usw)',
-				answerClass: 'class-9',
+				answerClass: 'schüler',
 			},
 		],
 	},
@@ -32,26 +32,26 @@ export const questions = [
 		questionTextEnglish:
 			'How did you hear about our language course offerings?',
 		answerOptions: [
-			{ answerText: 'Carl-Schurz-Haus Webseite', answerClass: 'class-5' },
+			{ answerText: 'Carl-Schurz-Haus Webseite', answerClass: 'CSH website' },
 			{
 				answerText: 'Social Media (Facebook, Twitter, Instagram, LinkedIn)',
-				answerClass: '',
+				answerClass: 'social media',
 			},
-			{ answerText: 'Google', answerClass: '' },
+			{ answerText: 'Google', answerClass: 'google' },
 			{
 				answerText: 'Carl-Schurz-Haus Veranstaltung / Event',
-				answerClass: '',
+				answerClass: 'CSH event',
 			},
-			{ answerText: 'Poster oder Flyer', answerClass: '' },
+			{ answerText: 'Poster oder Flyer', answerClass: 'poster' },
 			{
 				answerText: 'Print Ad (z.B. Zypresse, Studentenfudder)',
-				answerClass: '',
+				answerClass: 'print ad',
 			},
-			{ answerText: 'Carl-Schurz-Haus Newsletter', answerClass: '' },
-			{ answerText: 'Einzelunterricht', answerClass: '' },
+			{ answerText: 'Carl-Schurz-Haus Newsletter', answerClass: 'CSH newsletter' },
+			{ answerText: 'Einzelunterricht', answerClass: 'einzel' },
 			{
 				answerText: 'von Freunden oder Bekannten / from a friend or colleague',
-				answerClass: '',
+				answerClass: 'friend',
 			},
 		],
 	},

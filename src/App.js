@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import LanguageTest from './LanguageTest';
 import { questions } from './questions.js';
+import TestResults from './TestResults';
+
 
 export default function App() {
 	const [index, setIndex] = useState(0);
@@ -10,6 +12,7 @@ export default function App() {
 	const [style, setStyle] = useState('answer-btn');
 	const classOptionsFinal = classOptions;
 	console.log(classOptionsFinal);
+
 
 	function nextQuestion() {
 		let nextQuestion = index + 1;
@@ -27,7 +30,6 @@ export default function App() {
 	}
 
 	function handleAnswerClick(e, answerClass) {
-		console.log(e.target.className);
 		let current = e.target;
 		current.classList.toggle('answer-btn-click');
 		handleAnswerClass(answerClass);
@@ -36,7 +38,7 @@ export default function App() {
 	return (
 		<div className="test">
 			{formComplete ? (
-				<LanguageTest courses={classOptionsFinal} />
+				<LanguageTest />
 			) : (
 				<section className="question-container">
 					<h3>{questionText}</h3>
