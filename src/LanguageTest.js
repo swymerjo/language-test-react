@@ -60,11 +60,11 @@ export default function LanguageTest() {
 		languageTestQuestionsOne[indexLanguageTest];
 	const [score, setScore] = useState(0);
 	const [testComplete, setTestComplete] = useState(false);
-
 	function handleAnswerClickTest(isCorrect) {
 		if (isCorrect) {
 			setScore(score + 1);
 			nextQuestionTest();
+
 		} else {
 			nextQuestionTest();
 		}
@@ -83,7 +83,7 @@ export default function LanguageTest() {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<LanguageTestTwo scoreOne={score} />
+					<LanguageTestTwo scoreOne={score}  />
 				</section>
 			) : (
 				<section className="language-test-container">

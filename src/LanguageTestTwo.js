@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { questionsTwo } from './questionsTwo';
 import LanguageTestThree from './LanguageTestThree';
 
-export default function LanguageTestTwo(scoreOne) {
+export default function LanguageTestTwo(scoreOne, course) {
+	console.log(course);
 	const currentScore = scoreOne;
 	console.log(currentScore.scoreOne);
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
@@ -37,7 +38,7 @@ export default function LanguageTestTwo(scoreOne) {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<LanguageTestThree scoreTwo={score}/>
+					<LanguageTestThree scoreTwo={score} />
 				</section>
 			) : (
 				<div className="language-test-container">

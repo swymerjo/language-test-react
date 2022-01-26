@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import LanguageTest from './LanguageTest';
 import { questions } from './questions.js';
-import TestResults from './TestResults';
-
 
 export default function App() {
 	const [index, setIndex] = useState(0);
@@ -12,7 +10,6 @@ export default function App() {
 	const [style, setStyle] = useState('answer-btn');
 	const classOptionsFinal = classOptions;
 	console.log(classOptionsFinal);
-
 
 	function nextQuestion() {
 		let nextQuestion = index + 1;
@@ -27,6 +24,8 @@ export default function App() {
 
 	function handleAnswerClass(answerClass) {
 		setClassOptions([answerClass + ' '].concat(classOptions));
+		console.log(classOptions);
+		localStorage.setItem('classOptions', classOptionsFinal);
 	}
 
 	function handleAnswerClick(e, answerClass) {
@@ -38,30 +37,34 @@ export default function App() {
 	return (
 		<div className="test">
 			{formComplete ? (
-				<LanguageTest />
+				<LanguageTest course={classOptions}/>
 			) : (
-				<section className="question-container">
-					<h3>{questionText}</h3>
-					<hr className="line"></hr>
-					<h3>{questionTextEnglish}</h3>
-					<div className="answer-section">
-						{answerOptions.map((answerOption, index) => (
-							<button
-								id="answer-btn"
-								key={index}
-								onClick={(e) => handleAnswerClick(e, answerOption.answerClass)}
-								className={style}
-							>
-								{answerOption.answerText}
+					<section className="question-container">
+						<h3>{questionText}</h3>
+						<hr className="line"></hr>
+						<h3>{questionTextEnglish}</h3>
+						<div className="answer-section">
+							{answerOptions.map((answerOption, index) => (
+								<button
+									id="answer-btn"
+									key={index}
+									onClick={(e) =>
+										handleAnswerClick(e, answerOption.answerClass)
+									}
+									className={style}
+								>
+									{answerOption.answerText}
+								</button>
+							))}
+							<p>You have selected: {classOptions}</p>
+							<button onClick={() => nextQuestion()} className="next-btn">
+								Next
 							</button>
-						))}
-						<p>You have selected: {classOptions}</p>
-						<button onClick={() => nextQuestion()} className="next-btn">
-							Next
-						</button>
-					</div>
-				</section>
+						</div>
+					</section>
 			)}
 		</div>
 	);
 }
+
+// use ...classOptions
