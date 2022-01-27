@@ -1,7 +1,7 @@
 :root {
 	--background: #f4f9f9;
 	--light-blue: #cbf2f4;
-	--bright-blue: #a4ebf3;
+	--bright-blue: #0389ad;
 	--border: #d1d4d4;
 }
 
@@ -13,11 +13,27 @@ body {
 	align-items: center;
 	min-height: 100vh;
 }
+h2 {
+	text-align: center;
+}
 
 h3 {
 	font-size: 20pt;
 	text-align: center;
 	margin: 15px;
+	color: white;
+}
+
+p {
+	color: white;
+}
+a {
+	color: #0389ad;
+	font-size: 25pt;
+	text-decoration: underline;
+}
+a:hover {
+	color: #252d4a;
 }
 
 .question-container {
@@ -62,7 +78,7 @@ h3 {
 	width: 100%;
 	font-size: 18px;
 	color: black;
-	background-color: var(--border);
+	background-color: var(--light-blue);
 	font-weight: bold;
 	text-align: start;
 	border-radius: 5px;
@@ -115,7 +131,14 @@ h3 {
 	width: 100%;
 	margin-bottom: 20px;
 }
-
+.link-wrapper {
+	text-align: center;
+}
+.test-results-page {
+	background: #cbf2f4;
+	padding: 60px;
+	border-radius: 4px;
+}
 @media (max-width: 760px) {
 	h3 {
 		font-size: 15pt;
@@ -124,5 +147,8 @@ h3 {
 	.language-test-container {
 		max-width: 100%;
 		margin: 10px;
+	}
+	.test-results-page {
+		font-size: 14px;
 	}
 }

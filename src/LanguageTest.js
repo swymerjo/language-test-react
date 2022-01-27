@@ -64,7 +64,6 @@ export default function LanguageTest() {
 		if (isCorrect) {
 			setScore(score + 1);
 			nextQuestionTest();
-
 		} else {
 			nextQuestionTest();
 		}
@@ -83,7 +82,7 @@ export default function LanguageTest() {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<LanguageTestTwo scoreOne={score}  />
+					<LanguageTestTwo scoreOne={score} />
 				</section>
 			) : (
 				<section className="language-test-container">
@@ -103,7 +102,6 @@ export default function LanguageTest() {
 							</button>
 						))}
 						<p>Question {questionNumber}/40</p>
-						<p>Your score is {score}</p>
 					</div>
 				</section>
 			)}

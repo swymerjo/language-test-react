@@ -14,51 +14,67 @@ export default function TestResults(score) {
 
 	return (
 		<>
-			{currentScore.scoreSix <= 15 ? (
-				<section>
-					<p>your score is: {currentScore.scoreSix}(A1)</p>
-					<a
-						href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=71&katvaterid=64&katname=A1"
-						target="_blank"
-					>
-						A1 course recommendations
-					</a>
-				</section>
-			) : currentScore.scoreSix >= 16 && currentScore.scoreSix <= 23 ? (
-				<section>
-					<p>your score is: {currentScore.scoreSix} (A2)</p>
-					<a
-						href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=65&katvaterid=64&katname=A2"
-						target="_blank"
-					>
-						A2 course recommendations
-					</a>
-				</section>
-			) : currentScore.scoreSix >= 24 && currentScore.scoreSix <= 30 ? (
-				<section>
-					<p>your score is: {currentScore.scoreSix} (B1)</p>
-					<a
-						href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=66&katvaterid=64&katname=B1"
-						target="_blank"
-					>
-						B1 course recommendations
-					</a>
-				</section>
-			) : (
-				currentScore.scoreSix >= 31 &&
-				currentScore.scoreSix <=
-					36(
-						<section>
-							<p>your score is: {currentScore.scoreSix} (B2)</p>
+			<div className="test-results-page">
+				{currentScore.scoreSix <= 15 ? (
+					<section>
+						<h2>Congratulations! You achieved level A1</h2>
+						<h2>Here are some course recommendations based on your level:</h2>
+						<div className="link-wrapper">
 							<a
-								href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=67&katvaterid=64&katname=B2"
+								href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=71&katvaterid=64&katname=A1"
 								target="_blank"
 							>
-								B2 course recommendations
+								A1 course recommendations
 							</a>
-						</section>
-					)
-			)}
+						</div>
+					</section>
+				) : currentScore.scoreSix >= 16 && currentScore.scoreSix <= 23 ? (
+					<section>
+						<h2>Congratulations! You achieved level A2</h2>
+						<h2>Here are some course recommendations based on your level:</h2>
+						<div className="link-wrapper">
+							<a
+								href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=65&katvaterid=64&katname=A2"
+								target="_blank"
+							>
+								A2 course recommendations
+							</a>
+						</div>
+					</section>
+				) : currentScore.scoreSix >= 24 && currentScore.scoreSix <= 30 ? (
+					<section>
+						<h2>Congratulations! You achieved level B1</h2>
+						<h2>Here are some course recommendations based on your level:</h2>
+						<div className="link-wrapper">
+							<a
+								href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=66&katvaterid=64&katname=B1"
+								target="_blank"
+							>
+								B1 course recommendations
+							</a>
+						</div>
+					</section>
+				) : (
+					currentScore.scoreSix >= 31 &&
+					currentScore.scoreSix <=
+						36(
+							<section>
+								<h2>Congratulations! You achieved level A1</h2>
+								<h2>
+									Here are some course recommendations based on your level:
+								</h2>
+								<div className="link-wrapper">
+									<a
+										href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=67&katvaterid=64&katname=B2"
+										target="_blank"
+									>
+										B2 course recommendations
+									</a>
+								</div>
+							</section>
+						)
+				)}
+			</div>
 		</>
 	);
 }

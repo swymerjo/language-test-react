@@ -37,15 +37,15 @@ export default function LanguageTestFour(scoreThree) {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<LanguageTestFive scoreFour={score}/>
+					<LanguageTestFive scoreFour={score} />
 				</section>
 			) : (
 				<div className="language-test-container">
 					<section className="sub-question-container">
-						<h3>
+						<h2>
 							In this section you must choose the word which best fits each
 							space in the text below.
-						</h3>
+						</h2>
 						<hr className="line"></hr>
 						<h4 className="sub-question-text">
 							UFOs - do they exist? UFO is short for 'unidentified flying
@@ -76,7 +76,6 @@ export default function LanguageTestFour(scoreThree) {
 							</button>
 						))}
 						<p>Question {questionNumber}/40</p>
-						<p>Your score is {score}</p>
 					</div>
 				</div>
 			)}

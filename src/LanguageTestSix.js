@@ -47,10 +47,10 @@ export default function LanguageTestSix(scoreFive) {
 			) : (
 				<div className="language-test-container">
 					<section className="sub-question-container">
-						<h3>
+						<h2>
 							In this section you must choose the word which best fits each
 							space in the text below.
-						</h3>
+						</h2>
 					</section>
 
 					<h3 className="language-test-question sub-question-text">
@@ -67,7 +67,6 @@ export default function LanguageTestSix(scoreFive) {
 							</button>
 						))}
 						<p>Question {questionNumber}/40</p>
-						<p>Your score is {score}</p>
 					</div>
 				</div>
 			)}

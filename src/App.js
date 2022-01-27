@@ -41,7 +41,7 @@ export default function App() {
 			) : (
 				<section className="question-container">
 					<h3>{questionText}</h3>
-					<hr className="line"></hr>
+					<hr className=""></hr>
 					<h3>{questionTextEnglish}</h3>
 					<div className="answer-section">
 						{answerOptions.map((answerOption, index) => (
