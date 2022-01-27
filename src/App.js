@@ -25,7 +25,7 @@ export default function App() {
 	function handleAnswerClass(answerClass) {
 		setClassOptions([answerClass + ' '].concat(classOptions));
 		console.log(classOptions);
-		localStorage.setItem('classOptions', classOptionsFinal);
+		localStorage.setItem('classOptions', JSON.stringify(classOptionsFinal));
 	}
 
 	function handleAnswerClick(e, answerClass) {
@@ -37,31 +37,29 @@ export default function App() {
 	return (
 		<div className="test">
 			{formComplete ? (
-				<LanguageTest course={classOptions}/>
+				<LanguageTest course={classOptions} />
 			) : (
-					<section className="question-container">
-						<h3>{questionText}</h3>
-						<hr className="line"></hr>
-						<h3>{questionTextEnglish}</h3>
-						<div className="answer-section">
-							{answerOptions.map((answerOption, index) => (
-								<button
-									id="answer-btn"
-									key={index}
-									onClick={(e) =>
-										handleAnswerClick(e, answerOption.answerClass)
-									}
-									className={style}
-								>
-									{answerOption.answerText}
-								</button>
-							))}
-							<p>You have selected: {classOptions}</p>
-							<button onClick={() => nextQuestion()} className="next-btn">
-								Next
+				<section className="question-container">
+					<h3>{questionText}</h3>
+					<hr className="line"></hr>
+					<h3>{questionTextEnglish}</h3>
+					<div className="answer-section">
+						{answerOptions.map((answerOption, index) => (
+							<button
+								id="answer-btn"
+								key={index}
+								onClick={(e) => handleAnswerClick(e, answerOption.answerClass)}
+								className={style}
+							>
+								{answerOption.answerText}
 							</button>
-						</div>
-					</section>
+						))}
+						<p>You have selected: {classOptions}</p>
+						<button onClick={() => nextQuestion()} className="next-btn">
+							Next
+						</button>
+					</div>
+				</section>
 			)}
 		</div>
 	);
