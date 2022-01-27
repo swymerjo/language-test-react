@@ -5,6 +5,10 @@ export default function ContactUs() {
 	const form = useRef();
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
+	let courseResults = JSON.parse(localStorage.getItem('classOptions')).join(
+		'& '
+	);
+	console.log(courseResults);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -53,9 +57,15 @@ export default function ContactUs() {
 					onChange={(e) => setEmail(e.target.value)}
 				/>
 			</div>
-			<label>Message</label>
+			<label>Course Recommendations: </label>
 			<div className="form-section">
-				<textarea name="message" />
+				<input
+					type="text"
+					name="courseResults"
+					id="courseResults"
+					value={courseResults}
+					onChange={console.log(courseResults)}
+				/>
 			</div>
 
 			<button className="submit-btn" type="submit" value="Submit">
