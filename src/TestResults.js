@@ -23,6 +23,7 @@ export default function TestResults(score) {
 							<a
 								href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=71&katvaterid=64&katname=A1"
 								target="_blank"
+								rel="noreferrer"
 							>
 								A1 course recommendations
 							</a>
@@ -36,6 +37,7 @@ export default function TestResults(score) {
 							<a
 								href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=65&katvaterid=64&katname=A2"
 								target="_blank"
+								rel="noreferrer"
 							>
 								A2 course recommendations
 							</a>
@@ -49,6 +51,7 @@ export default function TestResults(score) {
 							<a
 								href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=66&katvaterid=64&katname=B1"
 								target="_blank"
+								rel="noreferrer"
 							>
 								B1 course recommendations
 							</a>
@@ -67,6 +70,7 @@ export default function TestResults(score) {
 									<a
 										href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=67&katvaterid=64&katname=B2"
 										target="_blank"
+										rel="noreferrer"
 									>
 										B2 course recommendations
 									</a>
