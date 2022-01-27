@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { advancedQuestionsThree } from './advancedQuestionsThree';
-import Final from './Final';
+import ContactUs from './ContactUs';
 
 export default function AdvancedTestThree() {
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
@@ -30,7 +30,7 @@ export default function AdvancedTestThree() {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<Final />
+					<ContactUs />
 				</section>
 			) : (
 				<section className="language-test-container">
