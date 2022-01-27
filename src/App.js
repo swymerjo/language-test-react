@@ -54,7 +54,6 @@ export default function App() {
 								{answerOption.answerText}
 							</button>
 						))}
-						<p>You have selected: {classOptions}</p>
 						<button onClick={() => nextQuestion()} className="next-btn">
 							Next
 						</button>
