@@ -139,6 +139,16 @@ a:hover {
 	padding: 60px;
 	border-radius: 4px;
 }
+.congrats {
+	color: coral;
+	background: white;
+	padding: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 6px;
+	border-radius: 4px;
+	font-size: 18pt;
+}
 @media (max-width: 760px) {
 	h3 {
 		font-size: 15pt;
