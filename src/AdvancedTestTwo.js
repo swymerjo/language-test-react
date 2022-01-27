@@ -1,23 +1,16 @@
 import React, { useState } from 'react';
-import AdvancedTestOne from './AdvancedTestOne';
-import { questionsSix } from './questionsSix';
-import TestResults from './TestResults';
+import { advancedQuestionsTwo } from './advancedQuestionsTwo';
+import AdvancedTestThree from './AdvancedTestThree';
 
-export default function LanguageTestSix(scoreFive) {
-	const currentScore = scoreFive;
-	console.log(currentScore.scoreFive);
+export default function AdvancedTestTwo() {
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
-	const { question, answerOptions, questionNumber, id } =
-		questionsSix[indexLanguageTest];
-	const [score, setScore] = useState(currentScore.scoreFive);
+	const { answerOptions, questionNumber, id, question } =
+		advancedQuestionsTwo[indexLanguageTest];
+	const [score, setScore] = useState(0);
 	const [testComplete, setTestComplete] = useState(false);
-
 	function handleAnswerClickTest(isCorrect) {
-		console.log(isCorrect);
-		console.log(score);
 		if (isCorrect) {
 			setScore(score + 1);
-			console.log(score);
 			nextQuestionTest();
 		} else {
 			nextQuestionTest();
@@ -26,8 +19,7 @@ export default function LanguageTestSix(scoreFive) {
 
 	function nextQuestionTest() {
 		let nextQuestionTest = id + 1;
-		console.log(nextQuestionTest);
-		if (nextQuestionTest < questionsSix.length) {
+		if (nextQuestionTest < advancedQuestionsTwo.length) {
 			setIndexLanguageTest(nextQuestionTest);
 		} else {
 			setTestComplete(true);
@@ -36,13 +28,9 @@ export default function LanguageTestSix(scoreFive) {
 
 	return (
 		<>
-			{testComplete && score < 36 ? (
+			{testComplete ? (
 				<section className="language-test-two">
-					<TestResults scoreSix={score} />
-				</section>
-			) : testComplete && score >= 36 ? (
-				<section>
-					<AdvancedTestOne scoreSix={score} />
+					<AdvancedTestThree />
 				</section>
 			) : (
 				<div className="language-test-container">
@@ -51,6 +39,15 @@ export default function LanguageTestSix(scoreFive) {
 							In this section you must choose the word which best fits each
 							space in the text below.
 						</h2>
+						<hr className="line"></hr>
+						<h4 className="sub-question-text">
+							SCRABBLE Scrabble is the world's most popular word game. For its
+							origins, we have to go back to the 1930s in the USA, when Alfred
+							Butts, an architect, found himself out of ____. He decided that
+							there was a ____ for a board game based on words and ____ to
+							design one. Eventually he made a ____ from it, in spite of the
+							fact that his original ____ was only three cents a game.
+						</h4>
 					</section>
 
 					<h3 className="language-test-question sub-question-text">

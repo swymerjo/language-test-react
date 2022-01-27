@@ -1,23 +1,16 @@
 import React, { useState } from 'react';
-import AdvancedTestOne from './AdvancedTestOne';
-import { questionsSix } from './questionsSix';
-import TestResults from './TestResults';
+import { advancedQuestions } from './advancedQuestions';
+import AdvancedTestTwo from './AdvancedTestTwo';
 
-export default function LanguageTestSix(scoreFive) {
-	const currentScore = scoreFive;
-	console.log(currentScore.scoreFive);
+export default function AdvancedTestOne() {
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
-	const { question, answerOptions, questionNumber, id } =
-		questionsSix[indexLanguageTest];
-	const [score, setScore] = useState(currentScore.scoreFive);
+	const { answerOptions, questionNumber, id, question } =
+		advancedQuestions[indexLanguageTest];
+	const [score, setScore] = useState(0);
 	const [testComplete, setTestComplete] = useState(false);
-
 	function handleAnswerClickTest(isCorrect) {
-		console.log(isCorrect);
-		console.log(score);
 		if (isCorrect) {
 			setScore(score + 1);
-			console.log(score);
 			nextQuestionTest();
 		} else {
 			nextQuestionTest();
@@ -26,8 +19,7 @@ export default function LanguageTestSix(scoreFive) {
 
 	function nextQuestionTest() {
 		let nextQuestionTest = id + 1;
-		console.log(nextQuestionTest);
-		if (nextQuestionTest < questionsSix.length) {
+		if (nextQuestionTest < advancedQuestions.length) {
 			setIndexLanguageTest(nextQuestionTest);
 		} else {
 			setTestComplete(true);
@@ -36,13 +28,9 @@ export default function LanguageTestSix(scoreFive) {
 
 	return (
 		<>
-			{testComplete && score < 36 ? (
+			{testComplete ? (
 				<section className="language-test-two">
-					<TestResults scoreSix={score} />
-				</section>
-			) : testComplete && score >= 36 ? (
-				<section>
-					<AdvancedTestOne scoreSix={score} />
+					<AdvancedTestTwo />
 				</section>
 			) : (
 				<div className="language-test-container">
@@ -51,6 +39,17 @@ export default function LanguageTestSix(scoreFive) {
 							In this section you must choose the word which best fits each
 							space in the text below.
 						</h2>
+						<hr className="line"></hr>
+						<h4 className="sub-question-text">
+							The tallest buildings - SKYSCRAPERS Nowadays, skyscrapers can be
+							found in most major cities of the world. A building which was many
+							____ high was first called a skyscraper in the United States at
+							the end of the 19th century, and New York has perhaps the ____
+							skyscraper of them all, the Empires State Building. The ____
+							beneath the streets of New York is rock, ____ enough to take the
+							heaviest load without sinking, and is therefore well-suited to
+							bearing the ____ of tall buildings.
+						</h4>
 					</section>
 
 					<h3 className="language-test-question sub-question-text">
