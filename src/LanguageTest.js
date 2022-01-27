@@ -86,7 +86,6 @@ export default function LanguageTest() {
 				</section>
 			) : (
 				<section className="language-test-container">
-					<h3>Question {questionNumber}</h3>
 					<h3 className="language-test-question">
 						Where can you see this notice?
 					</h3>

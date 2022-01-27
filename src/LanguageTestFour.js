@@ -63,7 +63,7 @@ export default function LanguageTestFour(scoreThree) {
 					</section>
 
 					<h3 className="language-test-question sub-question-text">
-						{questionNumber}. {question}
+						{question}
 					</h3>
 					<div className="answer-section" key={questionNumber}>
 						{answerOptions.map((answerOption, index) => (

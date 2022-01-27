@@ -1,7 +1,7 @@
 export const advancedQuestions = [
 	{
 		id: 0,
-		questionNumber: 41,
+		questionNumber: 1,
 		question:
 			'A building which was many ____ high was first called a skyscraper in the United States at the end of the 19th century',
 		answerOptions: [
@@ -13,7 +13,7 @@ export const advancedQuestions = [
 	},
 	{
 		id: 1,
-		questionNumber: 43,
+		questionNumber: 2,
 		question:
 			'New York has perhaps the ____ skyscraper of them all, the Empires State Building.',
 		answerOptions: [
@@ -25,7 +25,7 @@ export const advancedQuestions = [
 	},
 	{
 		id: 2,
-		questionNumber: 43,
+		questionNumber: 3,
 		question: 'The ____ beneath the streets of New York is rock',
 		answerOptions: [
 			{ answerText: 'dirt', isCorrect: false },
@@ -36,7 +36,7 @@ export const advancedQuestions = [
 	},
 	{
 		id: 3,
-		questionNumber: 44,
+		questionNumber: 4,
 		question: ' ____ enough to take the heaviest load without sinking',
 		answerOptions: [
 			{ answerText: 'hard', isCorrect: true },
@@ -47,7 +47,7 @@ export const advancedQuestions = [
 	},
 	{
 		id: 4,
-		questionNumber: 45,
+		questionNumber: 5,
 		question:
 			'and is therefore well-suited to bearing the ____ of tall buildings.',
 		answerOptions: [

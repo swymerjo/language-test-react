@@ -1,7 +1,7 @@
 export const advancedQuestionsThree = [
 	{
 		id: 0,
-		questionNumber: 51,
+		questionNumber: 11,
 		question:
 			"Roger's manager ____ to make him stay late if he hadn't finished the work.",
 		answerOptions: [
@@ -13,7 +13,7 @@ export const advancedQuestionsThree = [
 	},
 	{
 		id: 1,
-		questionNumber: 52,
+		questionNumber: 12,
 		question:
 			"By the time he has finished his week's work, John has hardly ____ energy left for the weekend.",
 		answerOptions: [
@@ -25,7 +25,7 @@ export const advancedQuestionsThree = [
 	},
 	{
 		id: 2,
-		questionNumber: 53,
+		questionNumber: 13,
 		question:
 			'As the game ____ to a close, disappointed spectators started to leave.',
 		answerOptions: [
@@ -37,7 +37,7 @@ export const advancedQuestionsThree = [
 	},
 	{
 		id: 3,
-		questionNumber: 54,
+		questionNumber: 14,
 		question:
 			" I don't remember ____ the front door when I left home this morning.",
 		answerOptions: [
@@ -49,7 +49,7 @@ export const advancedQuestionsThree = [
 	},
 	{
 		id: 4,
-		questionNumber: 55,
+		questionNumber: 15,
 		question:
 			'I ____ to other people borrowing my books: they always forget to return them.',
 		answerOptions: [
@@ -61,7 +61,7 @@ export const advancedQuestionsThree = [
 	},
 	{
 		id: 5,
-		questionNumber: 56,
+		questionNumber: 16,
 		question:
 			"Andrew's attempts to get into the swimming team have not ____ with much success.",
 		answerOptions: [
@@ -73,7 +73,7 @@ export const advancedQuestionsThree = [
 	},
 	{
 		id: 6,
-		questionNumber: 57,
+		questionNumber: 17,
 		question:
 			"Although Harry had obviously read the newspaper article carefully, he didn't seem to have ____ the main point.",
 		answerOptions: [
@@ -85,7 +85,7 @@ export const advancedQuestionsThree = [
 	},
 	{
 		id: 7,
-		questionNumber: 58,
+		questionNumber: 18,
 		question:
 			'A lot of the views put forward in the documentary were open to ____.',
 		answerOptions: [
@@ -97,7 +97,7 @@ export const advancedQuestionsThree = [
 	},
 	{
 		id: 8,
-		questionNumber: 59,
+		questionNumber: 19,
 		question:
 			'The new college ____ to the needs of the students with a variety of learning backgrounds.',
 		answerOptions: [
@@ -109,7 +109,7 @@ export const advancedQuestionsThree = [
 	},
 	{
 		id: 9,
-		questionNumber: 60,
+		questionNumber: 20,
 		question:
 			"I find the times of English meals very strange - I'm not used ____ dinner at 6pm",
 		answerOptions: [

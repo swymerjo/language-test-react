@@ -33,7 +33,12 @@ export default function AdvancedTestThree() {
 				</section>
 			) : (
 				<section className="language-test-container">
-					<h3>Question {questionNumber}</h3>
+					<section className="sub-question-container">
+						<h2>
+							In this section you must choose the word which best fits each
+							space in the text below.
+						</h2>
+					</section>
 					<h3 className="language-test-question">{question}</h3>
 					<div className="answer-section" key={questionNumber}>
 						{answerOptions.map((answerOption, index) => (
@@ -45,7 +50,7 @@ export default function AdvancedTestThree() {
 								{answerOption.answerText}
 							</button>
 						))}
-						<p>Question {questionNumber}/40</p>
+						<p>Question {questionNumber}/20</p>
 					</div>
 				</section>
 			)}

@@ -1,7 +1,7 @@
 export const advancedQuestionsTwo = [
 	{
 		id: 0,
-		questionNumber: 46,
+		questionNumber: 6,
 		question: 'Alfred Butts, an architect, found himself out of ____.',
 		answerOptions: [
 			{ answerText: 'earning', isCorrect: false },
@@ -12,7 +12,7 @@ export const advancedQuestionsTwo = [
 	},
 	{
 		id: 1,
-		questionNumber: 47,
+		questionNumber: 7,
 		question:
 			'He decided that there was a ____ for a board game based on words',
 		answerOptions: [
@@ -24,7 +24,7 @@ export const advancedQuestionsTwo = [
 	},
 	{
 		id: 2,
-		questionNumber: 48,
+		questionNumber: 8,
 		question: 'and ____ to design one.',
 		answerOptions: [
 			{ answerText: 'took up', isCorrect: false },
@@ -35,7 +35,7 @@ export const advancedQuestionsTwo = [
 	},
 	{
 		id: 3,
-		questionNumber: 49,
+		questionNumber: 9,
 		question: 'Eventually he made a ____ from it',
 		answerOptions: [
 			{ answerText: 'wealth', isCorrect: false },
@@ -46,7 +46,7 @@ export const advancedQuestionsTwo = [
 	},
 	{
 		id: 4,
-		questionNumber: 50,
+		questionNumber: 10,
 		question:
 			'in spite of the fact that his original ____ was only three cents a game.',
 		answerOptions: [

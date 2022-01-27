@@ -51,7 +51,7 @@ export default function AdvancedTestTwo() {
 					</section>
 
 					<h3 className="language-test-question sub-question-text">
-						{questionNumber}. {question}
+						{question}
 					</h3>
 					<div className="answer-section" key={questionNumber}>
 						{answerOptions.map((answerOption, index) => (
@@ -63,7 +63,7 @@ export default function AdvancedTestTwo() {
 								{answerOption.answerText}
 							</button>
 						))}
-						<p>Question {questionNumber}/40</p>
+						<p>Question {questionNumber}/20</p>
 					</div>
 				</div>
 			)}
