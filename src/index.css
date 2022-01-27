@@ -161,7 +161,7 @@ input {
 }
 .submit-btn {
 	margin-top: 10px;
-	padding: 8px;
+	padding: 8px 40px;
 	font-size: 15pt;
 	border-radius: 4px;
 	border: 2px solid black;
@@ -170,6 +170,9 @@ input {
 .submit-btn:hover {
 	background: coral;
 	cursor: pointer;
+}
+.btn-wrap {
+	text-align: center;
 }
 @media (max-width: 760px) {
 	h3 {
