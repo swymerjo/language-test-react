@@ -28,6 +28,9 @@ export default function ContactUs() {
 
 	return (
 		<form ref={form} onSubmit={sendEmail}>
+			<h2>Congratulations!</h2>
+			<h2>You are level C1</h2>
+			<h5>To complete the test, please submit your name and email.</h5>
 			<div>
 				<label>Name: </label>
 				<div className="form-section"></div>
