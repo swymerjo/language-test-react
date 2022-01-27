@@ -1,10 +1,10 @@
-import react from 'react';
+import React from 'react';
 
 export default function Final() {
 	return (
 		<section>
 			<h2>Congratulations! You are level C1</h2>
-
+			<h4> Please enter your details below </h4>
 			<form>
 				<div className="name-section">
 					<input
