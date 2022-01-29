@@ -227,6 +227,9 @@ button:hover {
 .show-text {
 	display: block;
 }
+.course-box {
+	display: none;
+}
 .test-results-title {
 	background: #f4f9f9;
 	padding: 20px 2px;

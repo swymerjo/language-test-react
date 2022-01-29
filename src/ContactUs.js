@@ -66,9 +66,10 @@ export default function ContactUs() {
 						onChange={(e) => setEmail(e.target.value)}
 					/>
 				</div>
-				<label>Course Recommendations: </label>
+				<label className="hide-text">Course Recommendations: </label>
 				<div className="form-section">
 					<input
+						className="course-box"
 						type="text"
 						name="courseResults"
 						id="courseResults"
