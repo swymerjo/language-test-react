@@ -34,10 +34,6 @@ export default function AdvancedTestOne() {
 				</section>
 			) : (
 				<div className="language-test-container">
-					<h3 className="congrats">
-						Congratulations! You scored at least 38/40. The following 20
-						questions will be more advanced.
-					</h3>
 					<section className="sub-question-container">
 						<h2>
 							In this section you must choose the word which best fits each

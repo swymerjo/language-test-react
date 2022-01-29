@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactUs from './ContactUs';
 
 export default function TestResults(score) {
 	const currentScore = score;
@@ -17,17 +18,21 @@ export default function TestResults(score) {
 			<div className="test-results-page">
 				{currentScore.scoreSix <= 15 ? (
 					<section>
-						<h2>Congratulations! You achieved level A1</h2>
-						<h2>Here are some course recommendations based on your level:</h2>
-						<div className="link-wrapper">
-							<a
-								href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=71&katvaterid=64&katname=A1"
-								target="_blank"
-								rel="noreferrer"
-							>
-								A1 course recommendations
-							</a>
+						<div className="test-results-title">
+							<h2>Congratulations! You achieved level A1</h2>
+							<h2>Here are some course recommendations based on your level:</h2>
+							<div className="link-wrapper">
+								<a
+									href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=71&katvaterid=64&katname=A1"
+									target="_blank"
+									rel="noreferrer"
+									className="recommendations-link"
+								>
+									A1 course recommendations
+								</a>
+							</div>
 						</div>
+						<ContactUs />
 					</section>
 				) : currentScore.scoreSix >= 16 && currentScore.scoreSix <= 23 ? (
 					<section>
@@ -42,6 +47,7 @@ export default function TestResults(score) {
 								A2 course recommendations
 							</a>
 						</div>
+						<ContactUs />
 					</section>
 				) : currentScore.scoreSix >= 24 && currentScore.scoreSix <= 30 ? (
 					<section>
@@ -56,13 +62,14 @@ export default function TestResults(score) {
 								B1 course recommendations
 							</a>
 						</div>
+						<ContactUs />
 					</section>
 				) : (
 					currentScore.scoreSix >= 31 &&
 					currentScore.scoreSix <=
 						36(
 							<section>
-								<h2>Congratulations! You achieved level A1</h2>
+								<h2>Congratulations! You achieved level B2</h2>
 								<h2>
 									Here are some course recommendations based on your level:
 								</h2>
@@ -75,6 +82,7 @@ export default function TestResults(score) {
 										B2 course recommendations
 									</a>
 								</div>
+								<ContactUs />
 							</section>
 						)
 				)}

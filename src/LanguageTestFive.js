@@ -40,7 +40,7 @@ export default function LanguageTestFive(scoreFour) {
 					<LanguageTestSix scoreFive={score} />
 				</section>
 			) : (
-				<div className="language-test-container">
+				<div className="language-test-container-one">
 					<section className="sub-question-container">
 						<h2>
 							In this section you must choose the word which best fits each

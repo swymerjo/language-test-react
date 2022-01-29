@@ -85,7 +85,7 @@ export default function LanguageTest() {
 					<LanguageTestTwo scoreOne={score} />
 				</section>
 			) : (
-				<section className="language-test-container">
+				<section className="language-test-container-one">
 					<h3 className="language-test-question">
 						Where can you see this notice?
 					</h3>
