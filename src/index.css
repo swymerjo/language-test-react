@@ -30,6 +30,7 @@ p {
 a {
 	color: #0389ad;
 	font-size: 20pt;
+	font-weight: bold;
 	text-decoration: underline;
 }
 a:hover {
