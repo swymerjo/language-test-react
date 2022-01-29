@@ -90,7 +90,11 @@ export default function ContactUs() {
 				Thanks! You have successfully submitted you results. Please follow the
 				link above to see your course recommendations.
 			</h2>
-			<a href="http://www.carl-schurz-haus.de/home.html" rel="noreferrer">
+			<a
+				href="http://www.carl-schurz-haus.de/home.html"
+				rel="noreferrer"
+				className="csh-link"
+			>
 				Visit the Carl-Schurz-Haus website
 			</a>
 		</form>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AdvancedTestOne from './AdvancedTestOne';
-import ContactUs from './ContactUs';
+import TestResults from './TestResults';
+import TestResultsAdvanced from './TestResultsAdvanced';
 
 export default function Congrats() {
 	const [next, setNext] = useState(false);
@@ -25,13 +26,13 @@ export default function Congrats() {
 					</h3>
 					<h5>Click 'Next' to continue the test</h5>
 					<h5>Click 'Finish' to finish the test and see your results</h5>
-					<button onClick={() => handleNext()}>Next</button>
 					<button onClick={() => handleFinish()}>Finish</button>
+					<button onClick={() => handleNext()}>Next</button>
 				</section>
 			) : next ? (
 				<AdvancedTestOne />
 			) : (
-				<ContactUs />
+				<TestResultsAdvanced />
 			)}
 		</>
 	);
