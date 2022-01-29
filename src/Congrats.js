@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import AdvancedTestOne from './AdvancedTestOne';
-import TestResults from './TestResults';
 import TestResultsAdvanced from './TestResultsAdvanced';
 
-export default function Congrats() {
+export default function Congrats(score) {
+	let currentScore = score.scoreSix;
+	console.log(currentScore);
+	// send score to local storage
 	const [next, setNext] = useState(false);
 	const [finish, setFinish] = useState(false);
 	console.log(next, finish);
@@ -24,10 +26,16 @@ export default function Congrats() {
 						Congratulations! You scored at least 38/40. The following 20
 						questions will be more advanced.
 					</h3>
-					<h5>Click 'Next' to continue the test</h5>
-					<h5>Click 'Finish' to finish the test and see your results</h5>
-					<button onClick={() => handleFinish()}>Finish</button>
-					<button onClick={() => handleNext()}>Next</button>
+					<h4>Click 'Next' to continue the test</h4>
+					<h4>Click 'Finish' to finish the test and see your results</h4>
+					<div className="btn-wrap">
+						<button className="finish-btn" onClick={() => handleFinish()}>
+							Finish
+						</button>
+						<button className="advance-btn" onClick={() => handleNext()}>
+							Next
+						</button>
+					</div>
 				</section>
 			) : next ? (
 				<AdvancedTestOne />

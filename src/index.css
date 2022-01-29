@@ -47,6 +47,10 @@ textarea {
 label {
 	font-size: 14pt;
 }
+
+button:hover {
+	cursor: pointer;
+}
 .question-container {
 	max-width: 100%;
 	margin: 0 auto;
@@ -160,15 +164,23 @@ label {
 	padding: 60px;
 	border-radius: 4px;
 }
+.congratulations {
+	border: 2px solid black;
+	padding: 20px;
+	border-radius: 4px;
+	max-width: 70%;
+	margin: 0 auto;
+	background: #cbf2f4;
+}
 .congrats {
-	color: coral;
+	color: #252d4a;
 	background: white;
-	padding: 10px;
+	padding: 20px;
+	border: 2px solid black;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	margin-top: 6px;
 	border-radius: 4px;
-	border: 2px solid black;
 	font-size: 18pt;
 }
 .form-section {
@@ -189,6 +201,22 @@ label {
 }
 .btn-wrap {
 	text-align: center;
+}
+.finish-btn,
+.advance-btn {
+	padding: 10px;
+	font-size: 15pt;
+	margin-right: 10px;
+	border-radius: 4px;
+	border: 2px solid black;
+	font-weight: bold;
+}
+.finish-btn {
+	background: coral;
+}
+.advance-btn {
+	background: #0389ad;
+	color: white;
 }
 .complete-test-text {
 	color: #252d4a;
