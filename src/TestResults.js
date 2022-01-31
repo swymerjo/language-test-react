@@ -67,7 +67,7 @@ export default function TestResults(score) {
 				) : (
 					currentScore.scoreSix >= 31 &&
 					currentScore.scoreSix <=
-						36(
+						35(
 							<section>
 								<h2>Congratulations! You achieved level B2</h2>
 								<h2>

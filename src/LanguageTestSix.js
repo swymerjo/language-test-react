@@ -36,11 +36,11 @@ export default function LanguageTestSix(scoreFive) {
 
 	return (
 		<>
-			{testComplete && score < 36 ? (
+			{testComplete && score < 35 ? (
 				<section className="language-test-two">
 					<TestResults scoreSix={score} />
 				</section>
-			) : testComplete && score >= 36 ? (
+			) : testComplete && score >= 35 ? (
 				<section>
 					<Congrats scoreSix={score} />
 				</section>

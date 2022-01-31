@@ -4,8 +4,8 @@ import TestResultsAdvanced from './TestResultsAdvanced';
 
 export default function Congrats(score) {
 	let currentScore = score.scoreSix;
+	localStorage.setItem('testScore', currentScore);
 	console.log(currentScore);
-	// send score to local storage
 	const [next, setNext] = useState(false);
 	const [finish, setFinish] = useState(false);
 	console.log(next, finish);
@@ -23,7 +23,7 @@ export default function Congrats(score) {
 			{!next && !finish ? (
 				<section className="congratulations">
 					<h3 className="congrats">
-						Congratulations! You scored at least 38/40. The following 20
+						Congratulations! You scored at least 35/40. The following 20
 						questions will be more advanced.
 					</h3>
 					<h4>Click 'Next' to continue the test</h4>

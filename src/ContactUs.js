@@ -74,16 +74,11 @@ export default function ContactUs() {
 						name="courseResults"
 						id="courseResults"
 						value={courseResults}
-						onChange={console.log(courseResults)}
+						readOnly
 					/>
 				</div>
 
-				<button
-					className="submit-btn"
-					type="submit"
-					value="Submit"
-					onChange={console.log(courseResults)}
-				>
+				<button className="submit-btn" type="submit" value="Submit" readOnly>
 					Submit
 				</button>
 			</div>

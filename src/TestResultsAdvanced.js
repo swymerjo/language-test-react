@@ -21,7 +21,7 @@ export default function TestResultsAdvanced() {
 						<h2>Here are some course recommendations based on your level:</h2>
 						<div className="link-wrapper">
 							<a
-								href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=71&katvaterid=64&katname=A1"
+								href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=67&katvaterid=64&katname=B2"
 								target="_blank"
 								rel="noreferrer"
 								className="recommendations-link"

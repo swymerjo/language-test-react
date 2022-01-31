@@ -3,10 +3,14 @@ import { advancedQuestions } from './advancedQuestions';
 import AdvancedTestTwo from './AdvancedTestTwo';
 
 export default function AdvancedTestOne() {
+	let testScore = localStorage.getItem('testScore');
+	testScore = parseInt(testScore, 10);
+	console.log(testScore);
+
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
 	const { answerOptions, questionNumber, id, question } =
 		advancedQuestions[indexLanguageTest];
-	const [score, setScore] = useState(0);
+	const [score, setScore] = useState(testScore);
 	const [testComplete, setTestComplete] = useState(false);
 	function handleAnswerClickTest(isCorrect) {
 		if (isCorrect) {
@@ -30,7 +34,7 @@ export default function AdvancedTestOne() {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<AdvancedTestTwo />
+					<AdvancedTestTwo newScore={score} />
 				</section>
 			) : (
 				<div className="language-test-container">

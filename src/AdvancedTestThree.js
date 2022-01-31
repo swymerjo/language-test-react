@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { advancedQuestionsThree } from './advancedQuestionsThree';
 import TestResultsAdvancedTwo from './TestResultsAdvancedTwo';
 
-export default function AdvancedTestThree() {
+export default function AdvancedTestThree(newScore) {
+	console.log(newScore.newScore.newScore);
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
 	const { answerOptions, questionNumber, id, question } =
 		advancedQuestionsThree[indexLanguageTest];
-	const [score, setScore] = useState(0);
+	const [score, setScore] = useState(newScore.newScore.newScore);
 	const [testComplete, setTestComplete] = useState(false);
 	function handleAnswerClickTest(isCorrect) {
 		if (isCorrect) {
@@ -30,7 +31,7 @@ export default function AdvancedTestThree() {
 		<>
 			{testComplete ? (
 				<section className="language-test-two">
-					<TestResultsAdvancedTwo />
+					<TestResultsAdvancedTwo finalScore={score} />
 				</section>
 			) : (
 				<section className="language-test-container">
