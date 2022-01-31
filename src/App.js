@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LanguageTest from './LanguageTest';
 import { questions } from './questions.js';
+import Footer from './Footer';
 
 export default function App() {
 	const [index, setIndex] = useState(0);
@@ -35,32 +36,37 @@ export default function App() {
 	}
 
 	return (
-		<div className="test">
-			{formComplete ? (
-				<LanguageTest course={classOptions} />
-			) : (
-				<section className="question-container">
-					<h3>{questionText}</h3>
-					<hr className=""></hr>
-					<h3>{questionTextEnglish}</h3>
-					<div className="answer-section">
-						{answerOptions.map((answerOption, index) => (
-							<button
-								id="answer-btn"
-								key={index}
-								onClick={(e) => handleAnswerClick(e, answerOption.answerClass)}
-								className={style}
-							>
-								{answerOption.answerText}
+		<>
+			<div className="test">
+				{formComplete ? (
+					<LanguageTest course={classOptions} />
+				) : (
+					<section className="question-container">
+						<h3>{questionText}</h3>
+						<hr className=""></hr>
+						<h3>{questionTextEnglish}</h3>
+						<div className="answer-section">
+							{answerOptions.map((answerOption, index) => (
+								<button
+									id="answer-btn"
+									key={index}
+									onClick={(e) =>
+										handleAnswerClick(e, answerOption.answerClass)
+									}
+									className={style}
+								>
+									{answerOption.answerText}
+								</button>
+							))}
+							<button onClick={() => nextQuestion()} className="next-btn">
+								Next
 							</button>
-						))}
-						<button onClick={() => nextQuestion()} className="next-btn">
-							Next
-						</button>
-					</div>
-				</section>
-			)}
-		</div>
+						</div>
+					</section>
+				)}
+			</div>
+			<Footer />
+		</>
 	);
 }
 

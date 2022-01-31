@@ -250,7 +250,32 @@ button:hover {
 	border: 2px solid black;
 	text-align: center;
 }
-
+.footer-container {
+	text-align: center;
+	font-weight: bold;
+}
+.footer-p {
+	color: black;
+	letter-spacing: 0.2ch;
+	padding: 4px;
+}
+.footer-link-csh {
+	text-decoration: none;
+	font-size: 15pt;
+	background: #cbf2f4;
+	border-radius: 4px;
+	margin: 4px;
+	padding: 4px;
+}
+.footer-link-sammy {
+	text-decoration: none;
+	font-size: 15pt;
+	color: #cbf2f4;
+	background: #0389ad;
+	border-radius: 4px;
+	margin: 4px;
+	padding: 4px;
+}
 @media (max-width: 760px) {
 	h3 {
 		font-size: 15pt;
