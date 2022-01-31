@@ -9,7 +9,7 @@ export default function LanguageTestSix(scoreFive) {
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
 	const { question, answerOptions, questionNumber, id } =
 		questionsSix[indexLanguageTest];
-	const [score, setScore] = useState(currentScore.scoreFive);
+	const [score, setScore] = useState(40);
 	const [testComplete, setTestComplete] = useState(false);
 
 	function handleAnswerClickTest(isCorrect) {

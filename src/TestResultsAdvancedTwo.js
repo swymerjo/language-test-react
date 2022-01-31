@@ -22,7 +22,7 @@ export default function TestResultsAdvancedTwo(newScore) {
 							<h2>Here are some course recommendations based on your level:</h2>
 							<div className="link-wrapper">
 								<a
-									href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=71&katvaterid=64&katname=A1"
+									href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=69&katvaterid=64&katname=C1"
 									target="_blank"
 									rel="noreferrer"
 									className="recommendations-link"
@@ -44,7 +44,7 @@ export default function TestResultsAdvancedTwo(newScore) {
 								</h2>
 								<div className="link-wrapper">
 									<a
-										href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=65&katvaterid=64&katname=A2"
+										href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=70&katvaterid=64&katname=C2"
 										target="_blank"
 										rel="noreferrer"
 									>
@@ -67,7 +67,7 @@ export default function TestResultsAdvancedTwo(newScore) {
 
 								<div className="link-wrapper">
 									<a
-										href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=66&katvaterid=64&katname=B1"
+										href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=67&katvaterid=64&katname=B2"
 										target="_blank"
 										rel="noreferrer"
 									>

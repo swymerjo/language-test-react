@@ -4,9 +4,6 @@ import ContactUs from './ContactUs';
 export default function TestResultsAdvanced() {
 	let courseResults = JSON.parse(localStorage.getItem('classOptions'));
 
-	// if (courseResults.includes('lehrbuch')) {
-	// 	courseResults = 'sammy';
-	// }
 	const recommendationList = courseResults.map((result, index) => (
 		<p key={index}>{result}</p>
 	));
