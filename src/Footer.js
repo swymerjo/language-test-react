@@ -10,6 +10,8 @@ export default function Footer() {
 						href="http://www.carl-schurz-haus.de/home.html"
 						alt="csh website"
 						className="footer-link-csh"
+						rel="noreferrer"
+						target="_blank"
 					>
 						CSH
 					</a>
@@ -18,6 +20,8 @@ export default function Footer() {
 						href="https://sammy-wymer.netlify.app"
 						alt="sammy wymer"
 						className="footer-link-sammy"
+						rel="noreferrer"
+						target="_blank"
 					>
 						Sammy Wymer
 					</a>
