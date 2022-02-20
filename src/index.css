@@ -232,12 +232,6 @@ button:hover {
 	display: none;
 }
 
-.test-results-title {
-	background: var(--light-blue);
-	padding: 1em;
-	border-radius: 0.4em;
-	border: 0.15em solid black;
-}
 .recommendations-link {
 	color: #0389ad;
 	font-weight: bold;

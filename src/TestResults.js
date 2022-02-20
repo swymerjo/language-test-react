@@ -18,20 +18,19 @@ export default function TestResults(score) {
 			<div className="test-results-page">
 				{currentScore.scoreSix <= 15 ? (
 					<section>
-						<div className="test-results-title">
-							<h2>Congratulations! You achieved level A1</h2>
-							<h2>Here are some course recommendations based on your level:</h2>
-							<div className="link-wrapper">
-								<a
-									href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=71&katvaterid=64&katname=A1"
-									target="_blank"
-									rel="noreferrer"
-									className="recommendations-link"
-								>
-									A1 course recommendations
-								</a>
-							</div>
+						<h2>Congratulations! You achieved level A1</h2>
+						<h2>Here are some course recommendations based on your level:</h2>
+						<div className="link-wrapper">
+							<a
+								href="https://www.carl-schurz-haus.de/nc/sprachkurse/erwachsene.html?kathaupt=1&katid=71&katvaterid=64&katname=A1"
+								target="_blank"
+								rel="noreferrer"
+								className="recommendations-link"
+							>
+								A1 course recommendations
+							</a>
 						</div>
+
 						<ContactUs />
 					</section>
 				) : currentScore.scoreSix >= 16 && currentScore.scoreSix <= 23 ? (
