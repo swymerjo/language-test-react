@@ -47,7 +47,10 @@ export const questions = [
 				answerText: 'Print Ad (z.B. Zypresse, Studentenfudder)',
 				answerClass: 'print ad',
 			},
-			{ answerText: 'Carl-Schurz-Haus Newsletter', answerClass: 'CSH newsletter' },
+			{
+				answerText: 'Carl-Schurz-Haus Newsletter',
+				answerClass: 'CSH newsletter',
+			},
 			{ answerText: 'Einzelunterricht', answerClass: 'einzel' },
 			{
 				answerText: 'von Freunden oder Bekannten / from a friend or colleague',

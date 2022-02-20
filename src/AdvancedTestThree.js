@@ -34,7 +34,7 @@ export default function AdvancedTestThree(newScore) {
 					<TestResultsAdvancedTwo finalScore={score} />
 				</section>
 			) : (
-				<section className="language-test-container">
+				<section className="language-test-container-two">
 					<section className="sub-question-container">
 						<h2>
 							In this section you must choose the word which best fits each

@@ -42,9 +42,9 @@ export default function App() {
 					<LanguageTest course={classOptions} />
 				) : (
 					<section className="question-container">
-						<h3>{questionText}</h3>
+						<h3 className="question-text-h3">{questionText}</h3>
 						<hr className=""></hr>
-						<h3>{questionTextEnglish}</h3>
+						<h3 className="question-text-h3">{questionTextEnglish}</h3>
 						<div className="answer-section">
 							{answerOptions.map((answerOption, index) => (
 								<button

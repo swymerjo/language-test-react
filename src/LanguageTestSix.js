@@ -9,7 +9,7 @@ export default function LanguageTestSix(scoreFive) {
 	const [indexLanguageTest, setIndexLanguageTest] = useState(0);
 	const { question, answerOptions, questionNumber, id } =
 		questionsSix[indexLanguageTest];
-	const [score, setScore] = useState(40);
+	const [score, setScore] = useState(currentScore.scoreFive);
 	const [testComplete, setTestComplete] = useState(false);
 
 	function handleAnswerClickTest(isCorrect) {
@@ -45,7 +45,7 @@ export default function LanguageTestSix(scoreFive) {
 					<Congrats scoreSix={score} />
 				</section>
 			) : (
-				<div className="language-test-container-one">
+				<div className="language-test-container-two">
 					<section className="sub-question-container">
 						<h2>
 							In this section you must choose the word which best fits each

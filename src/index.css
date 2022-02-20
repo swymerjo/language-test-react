@@ -12,16 +12,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	margin: 0;
 }
 h2 {
 	text-align: center;
-}
-
-h3 {
-	font-size: 20pt;
-	text-align: center;
-	margin: 15px;
-	color: white;
 }
 
 p {
@@ -52,45 +46,58 @@ label {
 button:hover {
 	cursor: pointer;
 }
+
 .question-container {
 	max-width: 100%;
-	margin: 0 auto;
+	margin-top: 1em;
 	background: var(--bright-blue);
-	border: 2px solid black;
-	border-radius: 4px;
-	padding: 0 10px 10px 10px;
+	border: 0.15em solid black;
+	border-radius: 0.4em;
+	padding: 0 1em 1em 1em;
+}
+
+.question-text-h3 {
+	font-size: 1.3rem;
+	text-align: center;
+	margin: 0.6em auto;
+	color: white;
 }
 .language-test-container-one {
-	max-width: 60%;
+	max-width: 70%;
 	margin: 0 auto;
-	border: 2px solid black;
-	border-radius: 4px;
+	border: 0.15em solid black;
+	border-radius: 0.4em;
 	color: black;
-	padding: 10px 20px 10px 20px;
+	padding: 0 1em 1em 1em;
 	background: var(--bright-blue);
 }
 
-.language-test-container {
-	max-width: 80%;
+.language-test-container-two {
+	max-width: 70%;
 	margin: 0 auto;
-	border: 2px solid black;
-	border-radius: 4px;
-	color: black;
-	padding: 10px 20px 10px 20px;
+	margin-top: 1em;
 	background: var(--bright-blue);
+	padding: 1em;
+	border: 0.15em solid black;
+	border-radius: 0.4em;
 }
+
 .language-test-question {
-	margin: 15px;
+	color: white;
+	font-size: 1.6em;
+	text-align: center;
+	margin: 1em;
 }
 .sub-question-container {
-	border: 2px solid black;
-	border-radius: 4px;
-	padding: 10px;
+	font-size: 0.9rem;
+	border: 0.15em solid black;
+	border-radius: 0.4em;
+	padding: 0.5em;
 	background: var(--light-blue);
-	margin-bottom: 20px;
+	margin-bottom: 1em;
 }
 .sub-question-text {
-	font-size: 14pt;
+	font-size: 1.1rem;
 	line-height: 1.5;
 }
 .line {
@@ -101,19 +108,17 @@ button:hover {
 .answer-btn,
 .answer-btn-2,
 .answer-btn-test {
-	width: 100%;
-	font-size: 18px;
+	font-size: 1rem;
+	text-align: start;
 	color: black;
 	background-color: var(--light-blue);
 	font-weight: bold;
-	text-align: start;
-	border-radius: 5px;
+	width: 100%;
+	border-radius: 1.2em;
+	padding: 0.7em;
 	display: flex;
-	padding: 10px;
-	align-items: center;
-	border: 2px solid black;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	border: 0.15em solid black;
+	margin-top: 0.3em;
 	cursor: pointer;
 }
 
@@ -122,79 +127,70 @@ button:hover {
 }
 
 .answer-btn-click {
-	width: 100%;
-	font-size: 18px;
+	font-size: 1rem;
 	font-weight: bold;
-	text-align: left;
 	color: black;
 	background-color: coral;
-	border-radius: 5px;
+	width: 100%;
+	border-radius: 1.2em;
 	display: flex;
-	padding: 10px;
-	align-items: center;
-	border: 2px solid black;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	padding: 0.7em;
+	border: 0.15em solid black;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
 	cursor: pointer;
 }
 
 .next-btn {
 	background: var(--light-blue);
-	border: 2px solid black;
+	border: 0.15em solid black;
 	font-weight: bold;
-	border-radius: 5px;
-	padding: 10px 30px 10px 30px;
+	border-radius: 1.2em;
+	padding: 0.6em 1.5em 0.6em 1.5em;
 	display: flex;
 	margin: 0 auto;
-	font-size: 14pt;
-	margin-top: 15px;
+	font-size: 1rem;
+	margin-top: 0.7em;
 }
 
 .test-image {
-	border: 2px solid #252d4a;
-	border-radius: 5px;
+	border: 0.15em solid #252d4a;
+	border-radius: 0.4em;
 	display: flex;
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 1em;
 }
 .link-wrapper {
 	text-align: center;
 }
-.test-results-page {
-	background: #cbf2f4;
-	padding: 60px;
-	border-radius: 4px;
-}
 .congratulations {
-	border: 2px solid black;
+	border: 0.15em solid black;
 	padding: 20px;
-	border-radius: 4px;
-	max-width: 70%;
+	border-radius: 0.4em;
+	max-width: 50%;
 	margin: 0 auto;
 	background: #cbf2f4;
 }
 .congrats {
-	color: #252d4a;
-	background: white;
-	padding: 20px;
-	border: 2px solid black;
+	color: black;
+	background: ghostwhite;
+	padding: 1em;
+	border: 0.12em solid black;
 	margin: 0 auto;
-	margin-bottom: 10px;
-	margin-top: 6px;
-	border-radius: 4px;
-	font-size: 18pt;
+	margin-bottom: 0.5em;
+	border-radius: 0.4em;
+	font-size: 1.3rem;
 }
 .form-section {
-	margin-top: 10px;
+	margin-top: 0.5em;
 }
 .submit-btn {
-	margin-top: 10px;
-	padding: 8px 40px;
-	font-size: 15pt;
-	border-radius: 4px;
-	border: 2px solid black;
+	padding: 0.5em;
+	font-size: 1.2rem;
+	border-radius: 0.4em;
+	border: 0.12em solid black;
 	background: #cbf2f4;
-	margin-bottom: 20px;
+	margin-bottom: 1em;
 }
 .submit-btn:hover {
 	background: coral;
@@ -205,19 +201,23 @@ button:hover {
 }
 .finish-btn,
 .advance-btn {
-	padding: 10px;
-	font-size: 15pt;
-	margin-right: 10px;
-	border-radius: 4px;
-	border: 2px solid black;
+	padding: 0.5em;
+	font-size: 1.2rem;
+	margin-right: 1em;
+	border-radius: 0.4em;
+	border: 0.12em solid black;
 	font-weight: bold;
 }
 .finish-btn {
-	background: coral;
+	background: var(--bright-blue);
 }
+
 .advance-btn {
-	background: #0389ad;
-	color: white;
+	background: var(--border);
+}
+.finish-btn:hover,
+.advance-btn:hover {
+	opacity: 0.7;
 }
 .complete-test-text {
 	color: #252d4a;
@@ -231,11 +231,12 @@ button:hover {
 .course-box {
 	display: none;
 }
+
 .test-results-title {
-	background: #f4f9f9;
-	padding: 20px 2px;
-	border-radius: 4px;
-	border: 2px solid black;
+	background: var(--light-blue);
+	padding: 1em;
+	border-radius: 0.4em;
+	border: 0.15em solid black;
 }
 .recommendations-link {
 	color: #0389ad;
@@ -243,22 +244,17 @@ button:hover {
 }
 
 .form-format {
-	background: #d1d4d4;
-	margin-top: 10px;
-	padding: 10px 5px;
-	border-radius: 4px;
-	border: 2px solid black;
+	background: var(--light-blue);
+	margin-top: 1em;
+	padding: 0.5em;
+	border-radius: 0.4em;
+	border: 0.15em solid black;
 	text-align: center;
 }
 .footer-container {
 	text-align: center;
-	font-weight: bold;
-	border: 2px solid black;
-	max-width: 60%;
-	margin: 0 auto;
-	border-radius: 4px;
-	margin-top: 20px;
-	margin-bottom: 10px;
+	max-width: 100%;
+	margin-top: 1.2em;
 }
 .footer-p {
 	color: black;
@@ -266,39 +262,35 @@ button:hover {
 .footer-link-csh {
 	text-decoration: none;
 	font-size: 13pt;
-	margin: 4px;
-	padding: 4px;
+	margin: 0.1em;
+	padding: 0.25em;
 }
 .footer-link-sammy {
 	text-decoration: none;
-	font-size: 13pt;
+	font-size: 1em;
 	color: #252d4a;
-	margin: 4px;
-	padding: 4px;
+	margin: 0.1em;
+	padding: 0.25em;
 }
 .footer-link-sammy:hover {
 	color: #0389ad;
 }
+.final-page,
+.test-results-page {
+	padding: 0.5em 2em;
+}
 @media (max-width: 760px) {
-	h3 {
-		font-size: 15pt;
-	}
 	.question-container,
-	.language-test-container {
+	.language-test-container-two {
 		max-width: 100%;
-		margin: 10px;
+		margin: 1em;
 	}
 	.test-results-page {
 		font-size: 14px;
 	}
-	.sub-question-text {
-		font-size: 12pt;
-	}
+
 	.language-test-container-one {
 		max-width: 90%;
-	}
-	.footer-container {
-		margin-top: 20px;
-		max-width: 90%;
+		margin: 1em;
 	}
 }
