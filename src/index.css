@@ -254,15 +254,14 @@ button:hover {
 }
 .footer-p {
 	color: black;
+	text-decoration: underline;
 }
 .footer-link-csh {
-	text-decoration: none;
 	font-size: 13pt;
 	margin: 0.1em;
 	padding: 0.25em;
 }
 .footer-link-sammy {
-	text-decoration: none;
 	font-size: 1em;
 	color: #252d4a;
 	margin: 0.1em;
