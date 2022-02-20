@@ -73,11 +73,11 @@ button:hover {
 }
 
 .language-test-container-two {
-	max-width: 70%;
+	max-width: 60%;
 	margin: 0 auto;
 	margin-top: 1em;
 	background: var(--bright-blue);
-	padding: 1em;
+	padding: 0.5em;
 	border: 0.15em solid black;
 	border-radius: 0.4em;
 }
@@ -275,16 +275,9 @@ button:hover {
 }
 @media (max-width: 760px) {
 	.question-container,
+	.language-test-container-one,
 	.language-test-container-two {
 		max-width: 100%;
-		margin: 1em;
-	}
-	.test-results-page {
-		font-size: 14px;
-	}
-
-	.language-test-container-one {
-		max-width: 90%;
 		margin: 1em;
 	}
 }
